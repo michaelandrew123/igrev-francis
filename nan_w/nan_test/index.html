@@ -1,0 +1,70 @@
+<?php
+include_once('../common.php');
+if(! defined('_INDEX_')) define('_INDEX_', TRUE);
+
+?>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+    <title>naanna memory test</title>
+    <link rel="stylesheet" href="main.css">
+    <script>
+      var ele = document.querySelector('html');
+      if(window.innerWidth > 1920){
+        // ele.style.zoom = "0.5";
+      } else if(window.innerWidth > 1024){
+        // ele.style.zoom = 0.6;
+      }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E2D14LX19B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-E2D14LX19B');
+
+      var member_id = "<?php echo $member['mb_id'] ?>";
+
+      function getMemId(){
+        return member_id;
+      }
+
+    </script>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 640px; max-width: 100%; height: 700px; max-height: 100%; background: #FFFFFF"></canvas>
+    <script src="Build/Build.loader.js?ver=20220218"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Build.data",
+        frameworkUrl: "Build/Build.framework.js?ver=20220218",
+        codeUrl: "Build/Build.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "naannaGame",
+        productVersion: "1.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+    <div class="modal_background"></div>
+    <div class="modal_wrap">
+        <div class="modal_close">X</div>
+        <div class="text">
+            Modal Test By Dylan
+        </div>
+    </div>
+    <script src="./TestJS.js?ver=20220218"></script>
+  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      
+    });
+
+  </script>
+</html>

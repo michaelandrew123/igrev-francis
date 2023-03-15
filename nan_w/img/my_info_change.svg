@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="250" viewBox="0 0 250 250">
+  <defs>
+    <filter id="사각형_2284" x="45" y="110.204" width="176" height="115" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_1487" data-name="그룹 1487" transform="translate(-235 -375)">
+    <path id="패스_1472" data-name="패스 1472" d="M125,0A125,125,0,1,1,0,125,125,125,0,0,1,125,0Z" transform="translate(235 375)" fill="#438bff"/>
+    <g id="그룹_1366" data-name="그룹 1366" transform="translate(290.398 424.204)">
+      <g transform="matrix(1, 0, 0, 1, -55.4, -49.2)" filter="url(#사각형_2284)">
+        <path id="사각형_2284-2" data-name="사각형 2284" d="M55,0h6a55,55,0,0,1,55,55v0a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0v0A55,55,0,0,1,55,0Z" transform="translate(67 120.2)" fill="#fff"/>
+      </g>
+      <ellipse id="타원_269" data-name="타원 269" cx="32.5" cy="37" rx="32.5" ry="37" transform="translate(37.602 9)" fill="#e5e5e5"/>
+      <circle id="타원_289" data-name="타원 289" cx="36.5" cy="36.5" r="36.5" transform="translate(33.602 7)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,243 @@
+<?php
+include_once('../common.php');
+define('_SHOP_', true);
+$in_data = json_decode(file_get_contents('php://input'), true);
+
+$g5['title'] = '오늘의 복습';
+include_once(G5_THEME_SHOP_PATH.'/shop.head.php');
+$card_dtl_no = isset($in_data['card_dtl_no']) ? strip_tags($in_data['card_dtl_no']) : '';
+echo $_GET['id'];
+$target_table   = isset($_POST['target_table']) ? trim($_POST['target_table']) : '';
+
+
+$card_dtl_no=isset($_GET['card_dtl_no']) ? trim($_GET['card_dtl_no']) : '';
+echo $card_dtl_no;
+?>
+<div>
+    <table id="contentsBody">
+        <tr><td>번호<td>시작일<td>종료일</tr>
+    </table>
+</div>
+<form name="form_card" id="form_card">
+    <input type="hidden" id="acces_type"    name="acces_type"   value="r"/>
+    <input type="hidden" id="card_no"       name="card_no"      value="5"/>
+    <input type="hidden" id="card_dtl_no"   name="card_dtl_no"  value="6"/>
+    <section class="container main_sub gray_bg">
+        <div class="step">
+            <span><strong>3</strong>단계</span>
+            <div class="icon_Clock" id="limit_time_sec">
+                10
+            </div>
+        </div>
+        <button class="sound_button"><span id="card_dtl_txt"></span></button>
+        <div class="fixed_btn">
+            <ul>
+                <li>
+                    <button type="button" id="btnNa" class="btn btn-blue-bg">나!</button>
+                </li>
+                <li>
+                    <button type="button" id="btnNaAnna" class="btn btn-blue-bd">안나...</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+</form>
+<form name="form_card" id="form_card">
+    <input type="hidden" id="acces_type"    name="acces_type"   value="r"/>
+    <input type="hidden" id="card_no"       name="card_no"      value="5"/>
+    <input type="hidden" id="card_dtl_no"   name="card_dtl_no"  value="6"/>
+    <section class="container main_sub gray_bg">
+        <div class="step">
+            <span><strong>3</strong>단계</span>
+            <div class="icon_Clock" id="limit_time_sec">
+                10
+            </div>
+        </div>
+        <button class="sound_button"><span id="card_dtl_txt"></span></button>
+        <div class="fixed_btn">
+            <ul>
+                <li>
+                    <button type="button" id="btnNa" class="btn btn-blue-bg">나!</button>
+                </li>
+                <li>
+                    <button type="button" id="btnNaAnna" class="btn btn-blue-bd">안나...</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+</form>
+<form name="form_card" id="form_card">
+    <input type="hidden" id="acces_type"    name="acces_type"   value="r"/>
+    <input type="hidden" id="card_no"       name="card_no"      value="5"/>
+    <input type="hidden" id="card_dtl_no"   name="card_dtl_no"  value="6"/>
+    <section class="container main_sub gray_bg">
+        <div class="step">
+            <span><strong>3</strong>단계</span>
+            <div class="icon_Clock" id="limit_time_sec">
+                10
+            </div>
+        </div>
+        <button class="sound_button"><span id="card_dtl_txt"></span></button>
+        <div class="fixed_btn">
+            <ul>
+                <li>
+                    <button type="button" id="btnNa" class="btn btn-blue-bg">나!</button>
+                </li>
+                <li>
+                    <button type="button" id="btnNaAnna" class="btn btn-blue-bd">안나...</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+</form>
+<form name="form_card" id="form_card">
+    <input type="hidden" id="acces_type"    name="acces_type"   value="r"/>
+    <input type="hidden" id="card_no"       name="card_no"      value="5"/>
+    <input type="hidden" id="card_dtl_no"   name="card_dtl_no"  value="6"/>
+    <section class="container main_sub gray_bg">
+        <div class="step">
+            <span><strong>3</strong>단계</span>
+            <div class="icon_Clock" id="limit_time_sec">
+                10
+            </div>
+        </div>
+        <button class="sound_button"><span id="card_dtl_txt"></span></button>
+        <div class="fixed_btn">
+            <ul>
+                <li>
+                    <button type="button" id="btnNa" class="btn btn-blue-bg">나!</button>
+                </li>
+                <li>
+                    <button type="button" id="btnNaAnna" class="btn btn-blue-bd">안나...</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+</form>
+<form name="form_card" id="form_card">
+    <input type="hidden" id="acces_type"    name="acces_type"   value="r"/>
+    <input type="hidden" id="card_no"       name="card_no"      value="5"/>
+    <input type="hidden" id="card_dtl_no"   name="card_dtl_no"  value="6"/>
+    <section class="container main_sub gray_bg">
+        <div class="step">
+            <span><strong>3</strong>단계</span>
+            <div class="icon_Clock" id="limit_time_sec">
+                10
+            </div>
+        </div>
+        <button class="sound_button"><span id="card_dtl_txt"></span></button>
+        <div class="fixed_btn">
+            <ul>
+                <li>
+                    <button type="button" id="btnNa" class="btn btn-blue-bg">나!</button>
+                </li>
+                <li>
+                    <button type="button" id="btnNaAnna" class="btn btn-blue-bd">안나...</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+</form>
+<form name="form_card" id="form_card">
+    <input type="hidden" id="acces_type"    name="acces_type"   value="r"/>
+    <input type="hidden" id="card_no"       name="card_no"      value="5"/>
+    <input type="hidden" id="card_dtl_no"   name="card_dtl_no"  value="6"/>
+    <section class="container main_sub gray_bg">
+        <div class="step">
+            <span><strong>3</strong>단계</span>
+            <div class="icon_Clock" id="limit_time_sec">
+                10
+            </div>
+        </div>
+        <button class="sound_button"><span id="card_dtl_txt"></span></button>
+        <div class="fixed_btn">
+            <ul>
+                <li>
+                    <button type="button" id="btnNa" class="btn btn-blue-bg">나!</button>
+                </li>
+                <li>
+                    <button type="button" id="btnNaAnna" class="btn btn-blue-bd">안나...</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+</form>
+<script type="text/javascript">
+     var pTags = "<tr>"
+                +"<td>{0}"
+                +"<td>{1}"
+                +"<td>{2}"
+                +"</tr>"
+                ;
+
+    function getCard(){
+        $.ajax({
+                type: "POST"
+                ,url: "/api.card"
+                ,contentType: 'application/json; charset=utf-8'
+                ,dataType: "json"
+                ,data: JSON.stringify(
+                    $("#form_card").serializeObject()
+                )
+                ,success: function(data){
+                    console.log(data);
+                    var rsData = data.resultData;
+                    if(data.resultCd == "S0001"){
+                        $("#card_dtl_txt").text(data.card_dtl_txt);
+                        startCountDown(data.limit_time_sec);
+                    }
+                    //출력부분
+                    //   for(var i=0; i<rsData.length; i++){
+                    //       var _d = rsData[i];
+                    //       $("#contentsBody").append(pTags.format(_d['game_acces_hist_no'],_d['game_bgn_dt'],_d['game_end_dt']));
+                    //   }
+                }
+                ,async: false
+                ,error: function(data){
+                    console.log("error");
+                    console.log(data);
+                }
+        });
+    }
+
+    var timeleft = 0;
+    function startCountDown(sec){
+        timeleft = sec;
+        $("#limit_time_sec").text(timeleft);
+        var downloadTimer = setInterval(function(){
+                            timeleft--;
+                            $("#limit_time_sec").text(timeleft);
+                            if(timeleft < 0){
+                                clearInterval(downloadTimer);
+                                timeEnded();
+                            }
+                        }, 1000);
+    }
+    
+    function timeEnded(){
+        alert("Timeout");
+        if (confirm("다시 시도?")) {
+            // 확인(예) 버튼 클릭 시 이벤트
+            getCard();
+        } else {
+            // 취소(아니오) 버튼 클릭 시 이벤트
+
+        }
+    }
+
+    function updateNaAnna(na){
+        alert(na);
+    }
+    getCard();
+
+    $(document).ready(function(){
+        $("#btnNa").on("click", function(e){
+            updateNaAnna('y');
+        });
+        $("#btnNaAnna").on("click", function(e){
+            updateNaAnna('n');
+        });
+    });
+</script>
+<?php
+include_once(G5_THEME_SHOP_PATH.'/shop.tail.php');

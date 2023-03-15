@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="430" height="370" viewBox="0 0 430 370">
+  <defs>
+    <filter id="타원_286" x="35" y="0" width="369.99" height="370" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feFlood flood-color="#1e57e9" flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_17" x="123" y="110" width="200" height="150" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_1369" data-name="그룹 1369" transform="translate(-145 -298)">
+    <circle id="타원_281" data-name="타원 281" cx="12.5" cy="12.5" r="12.5" transform="translate(505 451)" fill="#4075ff"/>
+    <circle id="타원_282" data-name="타원 282" cx="12.5" cy="12.5" r="12.5" transform="translate(550 451)" fill="#47a5ff"/>
+    <circle id="타원_283" data-name="타원 283" cx="12.5" cy="12.5" r="12.5" transform="translate(145 451)" fill="#47a5ff"/>
+    <circle id="타원_284" data-name="타원 284" cx="12.5" cy="12.5" r="12.5" transform="translate(190 451)" fill="#4075ff"/>
+    <g transform="matrix(1, 0, 0, 1, 145, 298)" filter="url(#타원_286)">
+      <ellipse id="타원_286-2" data-name="타원 286" cx="124.995" cy="125" rx="124.995" ry="125" transform="translate(90 40)" fill="#438bff"/>
+    </g>
+    <g id="그룹_1368" data-name="그룹 1368">
+      <g transform="matrix(1, 0, 0, 1, 145, 298)" filter="url(#사각형_17)">
+        <rect id="사각형_17-2" data-name="사각형 17" width="140" height="90" transform="translate(145 120)" fill="#fff"/>
+      </g>
+      <line id="선_4" data-name="선 4" x2="34" transform="translate(366 452)" fill="none" stroke="#ddd" stroke-width="4"/>
+      <line id="선_5" data-name="선 5" x2="34" transform="translate(366 464)" fill="none" stroke="#ddd" stroke-width="4"/>
+      <line id="선_6" data-name="선 6" x2="34" transform="translate(366 476)" fill="none" stroke="#ddd" stroke-width="4"/>
+      <g id="그룹_1367" data-name="그룹 1367" transform="translate(303.755 436.802)">
+        <path id="사각형_2284" data-name="사각형 2284" d="M16.73,0h1.825a16.73,16.73,0,0,1,16.73,16.73v0a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0v0A16.73,16.73,0,0,1,16.73,0Z" transform="translate(11.602 26.468)" fill="#ddd"/>
+        <ellipse id="타원_269" data-name="타원 269" cx="9.886" cy="11.255" rx="9.886" ry="11.255" transform="translate(19.511 7.608)" fill="#fff"/>
+        <circle id="타원_289" data-name="타원 289" cx="11.103" cy="11.103" r="11.103" transform="translate(18.294 7)" fill="#ddd"/>
+      </g>
+    </g>
+  </g>
+</svg>

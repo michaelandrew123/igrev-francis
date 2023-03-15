@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39" height="37" viewBox="0 0 39 37">
+  <g id="그룹_1530" data-name="그룹 1530" transform="translate(-544.735 -610.685)">
+    <g id="사각형_2390" data-name="사각형 2390" transform="translate(548.735 616.685)" fill="#ff6161" stroke="#fff" stroke-width="3">
+      <path d="M0,0H31a0,0,0,0,1,0,0V27a4,4,0,0,1-4,4H4a4,4,0,0,1-4-4V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M1.5,1.5h28a0,0,0,0,1,0,0V27A2.5,2.5,0,0,1,27,29.5H4A2.5,2.5,0,0,1,1.5,27V1.5A0,0,0,0,1,1.5,1.5Z" fill="none"/>
+    </g>
+    <rect id="사각형_2391" data-name="사각형 2391" width="39" height="3" rx="1.5" transform="translate(544.735 616.685)" fill="#fff"/>
+    <rect id="사각형_2393" data-name="사각형 2393" width="15" height="3" rx="1.5" transform="translate(565.735 624.685) rotate(90)" fill="#fff"/>
+    <rect id="사각형_2394" data-name="사각형 2394" width="15" height="3" rx="1.5" transform="translate(571.735 624.685) rotate(90)" fill="#fff"/>
+    <rect id="사각형_2395" data-name="사각형 2395" width="15" height="3" rx="1.5" transform="translate(559.735 624.685) rotate(90)" fill="#fff"/>
+    <g id="사각형_2392" data-name="사각형 2392" transform="translate(554.735 610.685)" fill="#ff6161" stroke="#fff" stroke-width="3">
+      <path d="M4,0H15a4,4,0,0,1,4,4V9a0,0,0,0,1,0,0H0A0,0,0,0,1,0,9V4A4,4,0,0,1,4,0Z" stroke="none"/>
+      <path d="M4,1.5H15A2.5,2.5,0,0,1,17.5,4V7.5a0,0,0,0,1,0,0H1.5a0,0,0,0,1,0,0V4A2.5,2.5,0,0,1,4,1.5Z" fill="none"/>
+    </g>
+  </g>
+</svg>

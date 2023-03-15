@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="430" height="370" viewBox="0 0 430 370">
+  <defs>
+    <filter id="타원_286" x="35" y="0" width="369.99" height="370" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feFlood flood-color="#1e57e9" flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="패스_1483" x="153.394" y="82.795" width="140" height="112.156" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_17" x="143" y="132" width="160" height="140" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="비밀번호_로고" data-name="비밀번호 로고" transform="translate(-145 -268)">
+    <g transform="matrix(1, 0, 0, 1, 145, 268)" filter="url(#타원_286)">
+      <ellipse id="타원_286-2" data-name="타원 286" cx="124.995" cy="125" rx="124.995" ry="125" transform="translate(90 40)" fill="#438bff"/>
+    </g>
+    <g id="그룹_1363" data-name="그룹 1363" transform="translate(234.995 308)">
+      <g id="그룹_1362" data-name="그룹 1362">
+        <circle id="타원_273" data-name="타원 273" cx="6.99" cy="6.99" r="6.99" transform="translate(90.051 145.025)" fill="#438bff"/>
+        <circle id="타원_275" data-name="타원 275" cx="6.99" cy="6.99" r="6.99" transform="translate(118.01 145.025)" fill="#438bff"/>
+        <circle id="타원_276" data-name="타원 276" cx="6.99" cy="6.99" r="6.99" transform="translate(145.969 145.025)" fill="#438bff"/>
+      </g>
+    </g>
+    <circle id="타원_281" data-name="타원 281" cx="12.5" cy="12.5" r="12.5" transform="translate(505 421)" fill="#4075ff"/>
+    <circle id="타원_282" data-name="타원 282" cx="12.5" cy="12.5" r="12.5" transform="translate(550 421)" fill="#47a5ff"/>
+    <circle id="타원_283" data-name="타원 283" cx="12.5" cy="12.5" r="12.5" transform="translate(145 421)" fill="#47a5ff"/>
+    <circle id="타원_284" data-name="타원 284" cx="12.5" cy="12.5" r="12.5" transform="translate(190 421)" fill="#4075ff"/>
+    <g id="그룹_1365" data-name="그룹 1365" transform="translate(234.838 307.807)">
+      <g id="그룹_1362-2" data-name="그룹 1362" transform="translate(75.005 58.988)">
+        <g id="그룹_1372" data-name="그룹 1372">
+          <g transform="matrix(1, 0, 0, 1, -164.84, -98.79)" filter="url(#패스_1483)">
+            <path id="패스_1483-2" data-name="패스 1483" d="M89.15,89.32V63.479s4.808-20.315,34.941-20.315S157.15,63.479,157.15,63.479V89.32" transform="translate(92.24 55.63)" fill="none" stroke="#fff" stroke-width="12"/>
+          </g>
+          <g transform="matrix(1, 0, 0, 1, -164.84, -98.79)" filter="url(#사각형_17)">
+            <rect id="사각형_17-2" data-name="사각형 17" width="100" height="80" transform="translate(165 142)" fill="#fff"/>
+          </g>
+          <circle id="타원_275-2" data-name="타원 275" cx="10.021" cy="10.021" r="10.021" transform="translate(40.131 68.748)" fill="#ddd"/>
+          <rect id="사각형_2321" data-name="사각형 2321" width="10" height="27" transform="translate(45.157 72.205)" fill="#ddd"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

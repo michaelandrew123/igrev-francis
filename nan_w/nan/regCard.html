@@ -1,0 +1,185 @@
+<?php
+include_once('../common.php');
+define('_SHOP_', true);
+
+$g5['title'] = '카드 만들기';
+include_once(G5_THEME_SHOP_PATH.'/shop.head.php');
+?>
+<form name="form_card" id="form_card">
+    <input type="hidden" id="acces_type" name="acces_type" value="i"/>
+    <input type="hidden" id="hash_tags" name="hash_tags" value=""/>
+
+    <section class="container gray_bg storage_write">
+        <div class="contType_1">
+            <ul>
+                <li>
+                    <select name="card_grp" id="card_grp">
+                        <option value="0">기본폴더</option>
+                    </select>
+                </li>
+                <li>
+                    <textarea name="card_dtl_txt" id="card_dtl_txt" cols="30" rows="10" placeholder="기억하고 싶은 문장 또는 단어를 적어주세요."></textarea>
+                </li>
+                <li><input type="text" id="hash_tag_input" name="hash_tag_input" placeholder="#태그입력 (Ex: #고3 #수학)" autocomplete="off"></li>
+            </ul>
+            <div class="tag_list" >
+                <ul id="tag_list">
+                </ul>
+            </div>
+        </div>
+        <div class="btn_area">
+            <button type="button" id="btn_card_reg" class="basic-btn01 btn-blue-bd">등록</button>
+        </div>
+    </section>
+</form>
+<script type="text/javascript">
+    var hash_tag = {};
+    var counter = 0;
+
+    //tag사이에 String 변수 할당 영역 지정. ex) 1번째 {0}, 2번째 {1} ... 
+    var pTags = "<tr>"
+                +"<td>{0}"
+                +"<td>{1}"
+                +"<td>{2}"
+                +"</tr>"
+                ;
+    //format 함수를 통해서 위 {0}, {1} 부분에 필요한 정보 입력
+    $("#contentsBody").html(pTags.format("번호","시작일","종료일"));
+
+    function regCard(){
+        <? 
+        if($member['mb_id']){
+        ?>
+        getTags();
+        $.ajax({
+                type: "POST"
+                ,url: "/api.card"
+                ,contentType: 'application/json; charset=utf-8'
+                ,dataType: "json"
+                ,data: JSON.stringify(
+                    $("#form_card").serializeObject()
+                )
+                ,success: function(data){
+                    console.log(data);
+                    var rsData = data.resultData;
+                    if(data.resultCd == "S0001"){
+                        alert("저장 되었습니다.");
+                        //location.reload();
+                    }
+                    //출력부분
+                    //   for(var i=0; i<rsData.length; i++){
+                    //       var _d = rsData[i];
+                    //       $("#contentsBody").append(pTags.format(_d['game_acces_hist_no'],_d['game_bgn_dt'],_d['game_end_dt']));
+                    //   }
+                }
+                ,async: false
+                ,error: function(data){
+                    console.log("error");
+                    console.log(data);
+                }
+        });
+        <? } else { ?>
+        alert("로그인이 필요 합니다.");
+        <? } ?>
+    }
+
+    // 태그를 추가한다.
+    function addTag (value) {
+        hash_tag[counter] = value; // 태그를 Object 안에 추가
+        counter++; // counter 증가 삭제를 위한 del-btn 의 고유 id 가 된다.
+    }
+
+    function getTags(){
+        var tag_txt = '';
+        for(var i=0; i<$("#tag_list li").length ; i++){
+        //	alert( $("#t" + i).text() );
+            var tag_tmp = $("#t" + i).text() ;
+            tag_tmp = tag_tmp.replace("#",""); //변경작업
+            if(isEmpty(tag_tmp)) continue;
+            // $("#tag_list").append("<li class='tag-item' id='t" +counter + "'>#"+tagValue+"<button type='button' class='tag_delete del-btn' idx='"+counter+"'></button></li>");
+            
+            if( i != $("#tag_list li").length-1 ){
+                tag_tmp = tag_tmp + ",";
+            }
+            
+            tag_txt += tag_tmp ;
+        
+        }
+        
+        $("#hash_tags").val(tag_txt);
+        //alert('태그 최종값:' + tag_txt);
+    }
+
+    //페이지 로드 되었을 때 자동 실행
+    $(document).ready(function(){
+        //데이터 호출
+        // getPushLogs();
+        $("#btn_card_reg").on("click", function(e){
+            regCard();
+        });
+
+        $("#hash_tag_input").on("keypress", function (e) {
+            //alert('sdf');
+            var self = $(this);
+
+            if( $("#tag_list li").length >=10){
+                alert('태그는 10개까지만 입력 가능합니다.');
+                return false;
+                
+            }	
+            // input 에 focus 되있을 때 엔터 및 스페이스바 입력시 구동
+            if (e.key === "Enter" || e.keyCode == 32 || e.keyCode == 13 || e.type == 'tap') {
+                var tagValue = self.val(); // 값 가져오기
+
+                // 값이 없으면 동작 ㄴㄴ
+                if (tagValue !== "") {
+                    if( tagValue.indexOf('#') != -1 || tagValue==' ' ){
+                        alert('사용할 수 없는 문자입니다.');
+                        self.val(self.val().replaceAll("#",""));
+                        return false;
+                    }
+                
+                    // 같은 태그가 있는지 검사한다. 있다면 해당값이 array 로 return 된다.
+                    var result = Object.values(hash_tag).filter(function (word) {
+                        return word === tagValue;
+                    })
+                
+                    var bf_len = 0;
+                    if( $("#tag_list li").length>0 ){
+                        counter = $("#tag_list li").length;
+                    }
+                // alert('기존 태그 길이: '+ $("#tag_list li").length );return false;
+                    // 태그 중복 검사
+                    if (result.length == 0) { 
+                        $(".tag_list_placeholder").hide();
+                        tagValue = tagValue.replaceAll("#","");
+                        $("#tag_list").append("<li class='tag-item' id='t" +counter + "'>#"+tagValue+"<button type='button' class='tag_delete del-btn' idx='"+counter+"'></button></li>");
+                        
+                        addTag(tagValue);
+                        self.val("");
+                    } else {
+                        alert("태그값이 중복됩니다.");
+                    }
+                    
+                    //재정렬 id
+                    for(var i=0; i< $("#tag_list li").length; i++){
+                        $("#tag_list li").eq(i).attr('id', 't'+ i);
+                    //	alert( 'li id: '+ 	$("#tag_list li").eq(i).attr('id') );
+                    }
+                }
+                e.preventDefault(); // SpaceBar 시 빈공간이 생기지 않도록 방지
+            }
+        });
+
+        // 삭제 버튼 
+        // 삭제 버튼은 비동기적 생성이므로 document 최초 생성시가 아닌 검색을 통해 이벤트를 구현시킨다.
+        $(document).on("click", ".del-btn", function (e) {
+            var index = $(this).attr("idx");
+            hash_tag[index] = "";
+            $(this).parent().remove();
+        });
+    });
+    
+</script>
+<?php
+include_once(G5_THEME_SHOP_PATH.'/shop.tail.php');

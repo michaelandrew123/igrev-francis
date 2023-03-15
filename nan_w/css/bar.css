@@ -1,0 +1,126 @@
+
+
+.bar1,
+.bar2,
+.bar3,
+.bar4,
+.bar5,
+.bar6,
+.bar7{ 
+    width: 30px; 
+    position: relative;
+}
+
+ .bar1 {
+    height: 40px;  
+ }
+ .bar2 {
+    height: 160px; 
+ }
+ .bar3 {
+    height: 130px; 
+ }
+ .bar4{
+    height: 70px; 
+ }
+ .bar5{
+    height: 160px; 
+ }
+ .bar6{
+    height: 70px; 
+ }
+ .bar7{
+    height: 130px; 
+ }
+
+
+.bar1::before{
+    content: "4";  
+}
+.bar2::before{
+    content: "16";  
+} 
+.bar3::before{
+    content: "13";  
+} 
+.bar4::before{
+    content: "7";  
+} 
+.bar5::before{
+    content: "16";  
+} 
+.bar6::before{
+    content: "7";  
+} 
+
+.bar7::before{
+    content: "3";  
+} 
+
+
+
+
+
+.bar1::after{
+    content: "대기"; 
+} 
+.bar2::after{
+    content: "1대기"; 
+} 
+ 
+.bar3::after{
+    content: "2대기"; 
+} 
+ 
+.bar4::after{
+    content: "3대기"; 
+} 
+ 
+.bar5::after{
+    content: "4대기"; 
+} 
+ 
+.bar6::after{
+    content: "5대기"; 
+} 
+ 
+.bar7::after{
+    content: "6대기"; 
+} 
+                     
+ 
+.bar1::before,
+.bar2::before,
+.bar3::before,
+.bar4::before,
+.bar5::before,
+.bar6::before,
+.bar7::before
+{ 
+    position: absolute;
+    top: -20px;
+    text-align: center;  
+    left: 50%;
+    transform: translate(-50%, 0px);
+    width: 100%;
+} 
+.bar1::after,
+.bar2::after,
+.bar3::after,
+.bar4::after,
+.bar5::after,
+.bar6::after,
+.bar7::after{  
+    font-size: 10px;
+    position: absolute; 
+    text-align: center;
+    bottom: -20px;
+    font-weight: bold; 
+    left: 50%;
+    transform: translate(-50%, 0px);
+    width: 100%; 
+}
+
+
+ 
+ 

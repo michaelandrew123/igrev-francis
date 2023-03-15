@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+body{
+	font-family: 'Poppins', sans-serif; 
+    background-color: white !important;
+    background: white !important;
+}
+.container{
+	width: 95% !important;
+	margin: auto;
+	position: relative !important;
+}
+
+div#item_wrapper{
+
+    overflow:hidden;
+    position:relative;
+ 
+}
+ 
+.show{
+	display: block !important;
+}
+
+.bg-sky-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(14 165 233 / var(--tw-bg-opacity)) !important;
+ }
+
+
+
+ /*Star rating here*/
+.rate {
+    float: left;
+    height: 46px; 
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+
+
+/*Heart Icon*/
+#heart-icon{/*
+	fill: #574ae801;
+	stroke: #574ae8;
+	stroke-width: 7;
+	transition: fill 0.3s;
+	cursor: pointer;
+}
+
+#icon.filled,
+#icon:hover {
+	fill: #574ae8;
+}*/

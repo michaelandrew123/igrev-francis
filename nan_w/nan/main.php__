@@ -1,0 +1,125 @@
+<?php
+include_once('../common.php');
+define('_SHOP_', true);
+
+$g5['title'] = '';
+include_once(G5_THEME_SHOP_PATH.'/shop.head.php');
+?>
+
+<section class="container main_container">
+	<div class="contType_1">
+		<h1>기억 단계 진행표</h1>
+		<div class="main_graph_list">
+			<ul>
+				<li>
+					<div class="graph_wrap">
+						<div class="bar">
+							<span class="number">4</span>
+							<div class="percentage">20</div> <!-- percentage 안에 숫자를 변경해주세요 -->
+						</div>
+					</div>
+					<div class="txt">
+						대기
+					</div>
+				</li>
+				<li class="blue">
+					<div class="graph_wrap">
+						<div class="bar">
+							<span class="number">16</span>
+							<div class="percentage">100</div> <!-- percentage 안에 숫자를 변경해주세요 -->
+						</div>
+					</div>
+					<div class="txt">
+						1단계
+					</div>
+				</li>
+				<li>
+					<div class="graph_wrap">
+						<div class="bar">
+							<span class="number">13</span>
+							<div class="percentage">80</div> <!-- percentage 안에 숫자를 변경해주세요 -->
+						</div>
+					</div>
+					<div class="txt">
+						2단계
+					</div>
+				</li>
+				<li>
+					<div class="graph_wrap">
+						<div class="bar">
+							<span class="number">7</span>
+							<div class="percentage">50</div> <!-- percentage 안에 숫자를 변경해주세요 -->
+						</div>
+					</div>
+					<div class="txt">
+						3단계
+					</div>
+				</li>
+				<li class="blue">
+					<div class="graph_wrap">
+						<div class="bar">
+							<span class="number">16</span>
+							<div class="percentage">100</div> <!-- percentage 안에 숫자를 변경해주세요 -->
+						</div>
+					</div>
+					<div class="txt">
+						4단계
+					</div>
+				</li>
+				<li>
+					<div class="graph_wrap">
+						<div class="bar">
+							<span class="number">7</span>
+							<div class="percentage">60</div> <!-- percentage 안에 숫자를 변경해주세요 -->
+						</div>
+					</div>
+					<div class="txt">
+						5단계
+					</div>
+				</li>
+				<li>
+					<div class="graph_wrap">
+						<div class="bar">
+							<span class="number">3</span>
+							<div class="percentage">30</div> <!-- percentage 안에 숫자를 변경해주세요 -->
+						</div>
+					</div>
+					<div class="txt">
+						6단계
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="main_step_list">
+			<ul>
+				<li>감각기억</li>
+				<li>단기기억</li>
+				<li>장기기억</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="main_cont_1">
+		<ul>
+			<li>
+				<span class="title">오늘의 복습목표</span>
+				<div class="number">
+					<strong class="c-red">2 </strong><span>/ 16</span>
+				</div>
+			</li>
+			<li>
+				<span class="title">예상 학습 완료일</span>
+				<div class="number">
+					<strong>2022.12.12</strong>
+				</div>
+			</li>
+		</ul>
+		<div class="btn_area">
+			<a href="#" class="basic-btn01 btn-blue-bd"><span class="btn_tooltip"><b>지금 복습하면 잊어버리지 않아요!</b></span>오늘의 복습시작</a>
+		</div>
+	</div>
+</section>
+
+<?php
+include_once(G5_THEME_SHOP_PATH.'/shop.tail.php');

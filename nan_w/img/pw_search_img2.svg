@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="370" height="370" viewBox="0 0 370 370">
+  <defs>
+    <filter id="타원_286" x="0" y="0" width="370" height="370" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feFlood flood-color="#1e57e9" flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="합치기_4" x="23" y="75" width="112" height="80" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="합치기_5" x="251" y="214" width="74" height="56" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="패스_1489" x="60.317" y="92.734" width="240.652" height="152.939" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="패스_1490" x="111.422" y="92.701" width="189.577" height="195.072" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="패스_1488" x="130.484" y="92.701" width="170.515" height="200.686" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-6"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="패스_1491" x="127.469" y="192.998" width="79.469" height="94.799" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-7"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_1491" data-name="그룹 1491" transform="translate(-180 -298)">
+    <g id="비밀번호_로고" data-name="비밀번호 로고" transform="translate(0 30)">
+      <g transform="matrix(1, 0, 0, 1, 180, 268)" filter="url(#타원_286)">
+        <circle id="타원_286-2" data-name="타원 286" cx="125" cy="125" r="125" transform="translate(55 40)" fill="#438bff"/>
+      </g>
+      <g id="그룹_1363" data-name="그룹 1363" transform="translate(234.995 308)">
+        <g id="그룹_1362" data-name="그룹 1362">
+          <circle id="타원_273" data-name="타원 273" cx="6.99" cy="6.99" r="6.99" transform="translate(90.051 145.025)" fill="#438bff"/>
+          <circle id="타원_275" data-name="타원 275" cx="6.99" cy="6.99" r="6.99" transform="translate(118.01 145.025)" fill="#438bff"/>
+          <circle id="타원_276" data-name="타원 276" cx="6.99" cy="6.99" r="6.99" transform="translate(145.969 145.025)" fill="#438bff"/>
+        </g>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 180, 298)" filter="url(#합치기_4)">
+      <path id="합치기_4-2" data-name="합치기 4" d="M16.245,50v0c-.129,0-.257,0-.386,0a16.015,16.015,0,1,1,2.718-31.8q-.011-.311-.011-.625A17.386,17.386,0,0,1,52.414,11.8a11.856,11.856,0,0,1,4.444-.859A12.046,12.046,0,0,1,68.843,22.661a13.676,13.676,0,0,1,.006,27.333V50Z" transform="translate(33 82)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 180, 298)" filter="url(#합치기_5)">
+      <path id="합치기_5-2" data-name="합치기 5" d="M8.717,26v0L8.51,26A8.42,8.42,0,0,1,0,17.672,8.42,8.42,0,0,1,8.51,9.344a8.745,8.745,0,0,1,1.459.122q-.006-.162-.006-.325A9.371,9.371,0,0,1,28.125,6.134a6.54,6.54,0,0,1,2.385-.447,6.372,6.372,0,0,1,6.431,6.1,7.107,7.107,0,0,1,0,14.213v0Z" transform="translate(261 221)" fill="#fff"/>
+    </g>
+    <g id="그룹_1458" data-name="그룹 1458" transform="translate(-7864.125 -11080.021)">
+      <g transform="matrix(1, 0, 0, 1, 8044.13, 11378.02)" filter="url(#패스_1489)">
+        <path id="패스_1489-2" data-name="패스 1489" d="M8282.016,11580.7l-51.574-18.594,180.652-74.346Z" transform="translate(-8148.12 -11385.02)" fill="#fff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 8044.13, 11378.02)" filter="url(#패스_1490)">
+        <path id="패스_1490-2" data-name="패스 1490" d="M8321.83,11623.088l-19.062-42.258,129.577-92.814Z" transform="translate(-8169.35 -11385.31)" fill="#ddd"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 8044.13, 11378.02)" filter="url(#패스_1488)">
+        <path id="패스_1488-2" data-name="패스 1488" d="M8440.395,11488.016l-110.515,100.34,71.221,40.346Z" transform="translate(-8177.4 -11385.31)" fill="#fff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 8044.13, 11378.02)" filter="url(#패스_1491)">
+        <path id="패스_1491-2" data-name="패스 1491" d="M8329.9,11630.287l-.033,34.8,19.469-23.75Z" transform="translate(-8177.4 -11427.29)" fill="#c1c1c1"/>
+      </g>
+    </g>
+  </g>
+</svg>

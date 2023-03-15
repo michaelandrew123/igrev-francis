@@ -1,0 +1,79 @@
+.timeline{
+    border: 1px solid gray; 
+    width: 80%;
+    position: relative;
+    margin: auto;
+}
+.timeline.right-arrow::after{
+    content: '';
+    height: 0;
+    position: absolute;
+    top: -7px;
+    width: 0;
+    z-index: 1;
+    right: -8px;
+    border: medium solid gray;
+    border-width: 7px 0 7px 7px;
+    border-color: transparent transparent transparent #080808; 
+}
+.timeline > .container{
+    position: relative;
+}
+.container.container-1::after,
+.container.container-2::after,
+.container.container-3::after{
+    content: "";
+    position: absolute;
+    top: 0; 
+    height: 15px;
+    border: 1px solid #80808085;
+}
+.container.container-1::before,
+.container.container-2::before,
+.container.container-3::before{
+    content: "";
+    position: absolute;
+    bottom: 0; 
+    height: 15px;
+    border: 1px solid #80808085;
+}
+
+.container.container-1::after{  
+    left:20px; 
+}
+.container.container-1::before{  
+    left:20px; 
+}
+
+.container.container-2::after{  
+    left:100px; 
+}
+.container.container-2::before{  
+    left:100px; 
+} 
+
+.container.container-3::after{  
+    left:215px; 
+}
+.container.container-3::before{  
+    left:215px; 
+} 
+
+.container-1 > span,
+.container-2 > span,
+.container-3 > span {
+    position: absolute;
+    color: black !important;
+}
+
+
+.container-1 > span { 
+    left: 35px;
+}
+
+.container-2 > span {
+    left: 130px;
+} 
+.container-3 > span{
+    left: 225px;
+}

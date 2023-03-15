@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="370" height="370" viewBox="0 0 370 370">
+  <defs>
+    <filter id="패스_1472" x="0" y="0" width="370" height="370" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feFlood flood-color="#1e57e9" flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="패스_1482" x="220.23" y="71.607" width="95.349" height="79.436" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="합치기_3" x="74" y="92" width="184" height="184" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_1549" data-name="그룹 1549" transform="translate(-180 -340)">
+    <g transform="matrix(1, 0, 0, 1, 180, 340)" filter="url(#패스_1472)">
+      <path id="패스_1472-2" data-name="패스 1472" d="M125,0A125,125,0,1,1,0,125,125,125,0,0,1,125,0Z" transform="translate(55 40)" fill="#438bff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 180, 340)" filter="url(#패스_1482)">
+      <path id="패스_1482-2" data-name="패스 1482" d="M5748.015,6526.822l17.206,16.652,38.6-34.659" transform="translate(-5512.92 -6425)" fill="none" stroke="#fff" stroke-width="14"/>
+    </g>
+    <g id="그룹_1370" data-name="그룹 1370" transform="translate(-7400.099 3152.901)">
+      <g transform="matrix(1, 0, 0, 1, 7580.1, -2812.9)" filter="url(#합치기_3)">
+        <path id="합치기_3-2" data-name="합치기 3" d="M60.708,124v-.013a62,62,0,1,1,63.279-63.279H124V124Z" transform="translate(96 102)" fill="#fff"/>
+      </g>
+      <ellipse id="타원_291" data-name="타원 291" cx="6.5" cy="7" rx="6.5" ry="7" transform="translate(7693.099 -2656.901)" fill="#438bff"/>
+      <ellipse id="타원_292" data-name="타원 292" cx="7.5" cy="7" rx="7.5" ry="7" transform="translate(7731.099 -2656.901)" fill="#438bff"/>
+    </g>
+  </g>
+</svg>
